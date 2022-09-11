@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 const contact = () => {
   return (
     <div>
@@ -7,6 +7,10 @@ const contact = () => {
         <li>ph no - 9833793411</li>
         <li>address - Kandivalli</li>
       </ul>
+
+      <Link href="/">
+        <button>Back</button>
+      </Link>
     </div>
   );
 };

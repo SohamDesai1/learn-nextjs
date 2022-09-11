@@ -1,21 +1,28 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <Link href="/contact">
+            <a>Contact</a>
+          </Link>
         </li>
       </ul>
     </div>
-  )
+  );
 }
