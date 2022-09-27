@@ -11,5 +11,5 @@ const loginDetailsSchema = new mongoose.Schema({
         required: true
     }
 },{timestamps: true}); 
-mongoose.models = {}
-export default mongoose.model('LoginDetails', loginDetailsSchema);
+
+export default mongoose.models.loginDetails || mongoose.model('loginDetails', loginDetailsSchema);

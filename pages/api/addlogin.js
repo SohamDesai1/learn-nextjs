@@ -3,14 +3,9 @@ import connect from "../../models/connect";
 
 const handler = async (req, res) => {
   if (req.method === "POST") {
-    for (let i = 0; i < req.body.length; i++) {
-      let login = new loginDetails({
-        username: req.body[i].username,
-        password: req.body[i].password,
-      });
-      await login.save();
-        
-    }
+      console.log(req.body);
+      let a = new loginDetails(req.body);
+      await a.save(); 
     res.status(200).json({ message: "success" });
   }
   else{
